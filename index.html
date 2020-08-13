@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/site.webmanifest" />
+		<title>AnyVoice - Sound like anybody</title>
+	</head>
+
+	<body>
+		<div class="container logo">
+			<img src="assets/img/logo.svg" />
+		</div>
+
+		<div class="container">
+			<div class="intro">
+				<h1>Taking voice recording to the next level</h1>
+				<p>
+					AnyVoice is an awesome app that allows you change your voice to anyone
+					else’s in the world. App will be released sometime in 2050
+				</p>
+				<form action="">
+					<fieldset class="email">
+						<input
+							class="sub"
+							name="email"
+							type="text"
+							placeholder="Enter your email"
+							id="sub"
+							required
+						/>
+						<button type="submit" class="sub-submit">Get notified</button>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<div class="top-thingy-mobile">
+			<img src="assets/img/top-thingy-mobile.png" />
+		</div>
+		<div class="top-thingy">
+			<img src="assets/img/top-slice.png" />
+		</div>
+		<div class="container features">
+			<div class="wrap">
+				<div class="feature">
+					<img src="assets/img/voice-recording.svg" />
+					<p>Voice Recording</p>
+				</div>
+				<div class="feature">
+					<img src="assets/img/change-voice.svg" />
+					<p>Change Voice</p>
+				</div>
+				<div class="feature">
+					<img src="assets/img/have-fun.svg" />
+					<p>Have Fun</p>
+				</div>
+			</div>
+		</div>
+		<div class="app-screens">
+			<img src="assets/img/app-screens.png" />
+		</div>
+		<div class="how-it-works">
+			<img src="assets/img/steps-backdrop-art.svg" class="steps-backdrop-art" />
+			<div class="content">
+				<div class="side-image">
+					<img src="assets/img/phone-with-polka.png" />
+				</div>
+				<div class="steps">
+					<span class="tag">3 easy steps</span>
+					<h2>How it works</h2>
+					<img
+						src="assets/img/phone-with-polka.png"
+						class="steps-phone-mobile"
+					/>
+					<ul>
+						<li>
+							<span class="step-tag">1</span>
+							<p>
+								Take a sample of anyone's voice
+							</p>
+						</li>
+						<li>
+							<span class="step-tag">2</span>
+							<p>
+								Make your own voice recording in high quality
+							</p>
+						</li>
+						<li>
+							<span class="step-tag">3</span>
+							<p>
+								Add effect and sound like other people
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container desc">
+			<div class="desc-item">
+				<div class="desc-text">
+					<h2>Analyzing Voice</h2>
+					<p>
+						AnyVoice uses an artificially intelligent system that learns a
+						person’s voice by analyzing speech recordings and audio files /
+						video files as well as identifying the relationships between them.
+					</p>
+				</div>
+				<div class="desc-image">
+					<img src="assets/img/analyzing-voice.png" />
+				</div>
+			</div>
+			<div class="desc-item awesome">
+				<div class="desc-text">
+					<h2>See? Its gonna be aweseome</h2>
+					<p>
+						AnyVoice uses an artificially intelligent system that learns a
+						person’s voice by analyzing speech recordings and audio files /
+						video files as well as identifying the relationships between them.
+					</p>
+				</div>
+				<div class="desc-image">
+					<img src="assets/img/awesome.png" />
+				</div>
+			</div>
+		</div>
+		<div class="container get-notified">
+			<div class="info">
+				<h2>AnyVoice is coming soon to your device!</h2>
+				<p>Get notified about the app release</p>
+				<form action="">
+					<fieldset class="email">
+						<input
+							class="sub"
+							name="email"
+							type="text"
+							placeholder="Enter your email"
+							id="sub"
+							required
+						/>
+						<button type="submit" class="sub-submit">Get notified</button>
+					</fieldset>
+				</form>
+			</div>
+			<div class="image">
+				<img src="assets/img/notify-app-screen.png" />
+			</div>
+		</div>
+		<footer>
+			<p>
+				Designed by <span class="bold">Zurikss</span> | Developed by
+				<span class="bold">Chizo</span>
+			</p>
+		</footer>
+		<!-- <script>
+			const form = document.querySelector('form');
+
+			form.addEventListener('submit', function (e) {
+				const email = document.querySelector('#sub').value;
+				let data = new URLSearchParams();
+				for (const pair of new FormData(form)) {
+					data.append(pair[0], pair[1]);
+				}
+
+				e.preventDefault();
+				fetch('./subscribe.php', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/x-www-form-urlencoded', // sent request
+					},
+					body: data,
+				})
+					.then((res) => {
+						return res.json();
+					})
+					.then((data) => alert(JSON.parse(data)))
+					.catch((error) => {
+						alert(JSON.parse(error));
+					});
+			});
+		</script> -->
+	</body>
+</html>
